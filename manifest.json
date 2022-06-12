@@ -1,0 +1,25 @@
+{
+    "name": "Download Location Controller",
+    "description": "Download Location Controller",
+    "version": "1.0",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false},
+    "permissions": ["downloads", "declarativeContent", "storage"],
+    "options_page": "options.html",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_security_policy": "script-src 'self' chrome-extension-resource:   'unsafe-eval'; default-src 'self'",
+    "manifest_version": 2
+}
